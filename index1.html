@@ -1,0 +1,1140 @@
+
+<!DOCTYPE html>
+
+<script type="text/javascript">
+navegador=navigator.userAgent; //busco el "userAgent" del usuario.
+//lista de palabras del "userAgent" en los móviles
+moviles=["Mobile","iPhone","iPod","BlackBerry","Opera Mini","Sony","MOT","Nokia","samsung"];
+detector=0; //Variable que detectará si se usa un móvil
+for (i in moviles) { //comprobar en la lista ...
+ //si el método "indexOf" no devuelve -1, indica que la palabra está en el "userAgent"
+ compruebo=navegador.indexOf(moviles[i]);
+ if (compruebo>-1) {
+		detector=1; //Si es un móvil, cambio el valor del detector
+		}
+ }
+if (detector==1) { //si es un móvil redirecciono la página.
+ location.href="indexmovil.html"; //Se redirecciona hacia la versión móvil.
+ }
+</script>
+<script src="js/nav.js"></script>
+
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="Acronos Renovation and Painting" content="Empresa de remodelación de casas y oficinas en Aguascalientes">
+	<meta name="keywords" content="acronos, Pintura, Remodelación, Aguascalientes, acabados, impermeabilizacion, impermeabilización, remodelacion aguascalientes, empresas de remodelación en aguascalientes, pintura de casas, pintura de oficinas, reparar mi casa, pintar mi casa, ampliaciones de casas en aguascalientes, ampliaicion de oficinas en aguascalientes, ampliacion, ampliación">
+	<title>Acronos Renovation and Painting</title>
+	<link rel="shortcut icon" type="image/x-icon" href="img/icono/picono.ico">
+
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- General Style -->
+<!--	<link href="style.css" rel="stylesheet"> -->
+
+	<!-- Progress Bar Style -->
+	<link href="css/progress.css" rel="stylesheet">
+	<!-- 	<link href="css/vid.css" rel="stylesheet"> -->
+
+
+	<!--Website Skin-->
+	<!--link  id="theme-style" href="css/skin/default.css" rel="stylesheet"-->
+
+	<!--Custom CSS-->
+
+	<!-- Animations -->
+	<link href="css/animate.css" rel="stylesheet">
+
+	<!-- Owl Carousel -->
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/owl.theme.css" rel="stylesheet">
+	<link href="css/owl.transitions.css" rel="stylesheet">
+
+	<!--Fonts-->
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+	<link href="css/fonts/font-awesome.css" rel="stylesheet">
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<!-- Navigation start -->
+	<div id="main-navigation" class="navbar navbar-fixed-top">
+		<div class="">
+			<!-- Mobile Navigation start -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-navigation">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand logo visible-xs smooth" href="#home"><img src="img/picono.png" alt="Logo"></a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div id="site-navigation" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="#home" class="smooth">Inicio</a>
+					</li>
+					<li>
+						<a href="#about" class="smooth">Servicios</a>
+					</li>
+					<li>
+						<a href="#education" class="smooth">Sobre nosotros</a>
+					</li>
+					<li>
+						<a href="#work" class="smooth">Portafolio</a>
+					</li>
+					<li>
+						<a href="#references" class="smooth">Testimonios</a>
+					</li>
+					<li>
+						<a href="#contact" class="smooth"><b>HAZ TU CITA</b></a>
+					</li>
+					<li>
+						<a target="_blank" href="http://acronos.com.mx/aviso.html" >Aviso de privacidad</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- Navigation end -->
+<header>
+<!-- Website loader start -->
+<div class="preloader" style="">
+	<div class="status" style="">&nbsp;</div>
+</div>
+<!-- Website loader end -->
+<!-- Main landing start -->
+	<section id="home" class="landing">
+		<a href="#home" class="smooth">
+				<!--	<br> <br>	<h1>Aquí <span>comienza</span> tu nueva vida.</h1> -->
+
+		<video autoplay muted loop="loop" id="video_background" preload="auto">
+			<source src="video/introa.mp4" type="video/mp4" />
+		</video>
+
+		<!--	<img src="img/logoa.png" class="logo" alt="Logo" width="150"> -->
+		</a>
+		<div class="row landing-message">
+
+		</div>
+		<div class="scrollto">
+			<a href="#about" class="smooth">
+				<span class="mouse">
+					<span></span>
+				</span>
+			</a>
+		</div>
+		<div class="landing-bg"></div>
+
+
+
+		<!-- Social container start -->
+		<div class="social">
+		<ul>
+			<li><a target="_blank" href="https://www.facebook.com/AcronosRenovationandPainting"><i class="fa fa-facebook"></i></a></li>
+			<li><a target="_blank" href="https://www.linkedin.com/company/acronos"><i class="fa fa-linkedin"></i></a></li>
+			<li><a target="_blank" href="https://www.instagram.com/acronos_rp"><i class="fa fa-instagram"></i></a></li>
+			<li><a href="mailto:ventas@acronos.com.mx"><i class="fa fa-envelope-o"></i></a></li>
+			<li><a href="tel:+524493182541"><i class="fa fa-phone"></i></a></li>
+		</ul>
+
+		</div>
+		<!-- Social container end -->
+	</section>
+</header>
+<!-- Main landing end -->
+<!-- About start -->
+<section id="about" class="sec-pattern">
+	<div class="container">
+		<div class="row margin-lg">
+			<h1 class="main-title text-center wow fadeIn">Servicios</h1>
+			<div class="col-sm-3">
+				<div class="about-left text-right wow fadeInLeft">
+					<ul>
+						<li>
+							<span>Pintura</span>
+							Tú eliges los colores.
+							<i class="fa fa-paint-brush"></i>
+
+						</li>
+						<li>
+							<span>Impermeabilización</span>
+							Mejor ambiente.
+							<i class="fa fa-umbrella"></i>
+
+						</li>
+						<li>
+							<span>Acabados texturizados</span>
+							Tú eliges el diseño.
+							<i class="fa fa-sliders"></i>
+						</li>
+						<li>
+							<span>Resanes</span>
+							Déjalo como nuevo.
+							<i class="fa fa-th"></i>
+
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-6 wow fadeIn">
+				<img  src="img/logoa.png" class="img-responsive img-circle img-about" alt="about-portrait" width="350px">
+			</div>
+			<div class="col-sm-3">
+				<div class="about-right text-left wow fadeInRight">
+					<ul>
+						<li>
+							<span>Construcción</span>
+							<i class="fa fa-cube"></i>
+							Trabajos garantizados.
+						</li>
+						<li>
+							<span>Ampliaciones</span>
+							<i class="fa fa-cubes"></i>
+							Dale más espacio.
+						</li>
+						<li>
+							<span>Tablaroca</span>
+							<i class="fa fa-minus-square-o"></i>
+							Agrégale un detalle.
+						</li>
+						<li>
+							<span>Oficinas</span>
+							<i class="fa fa-building-o"></i>
+							Altamente profesionales.
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-offset-3 col-xs-6 col-sm-offset-3 col-sm-6 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6 wow fadeInUp">
+					<hr />
+
+					<h2 class="sub-title text-center">Confiable</h2>
+					<p class="text-center bio">
+Somos una empresa de remodelación regida por nuestros valores y capacitación constante para ofrecerte una experiencia de remodelación <b>única</b>.
+					</p>
+					<p class="text-center margin-md">
+						<a href="#education" class="btn btn-about smooth">Valores</a>
+					</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- About end -->
+<!-- Resume start -->
+<div id="resume">
+	<!-- Skills start -->
+	<section id="skill" data-speed="10" data-type="background">
+		<div class="container">
+			<div class="row margin-lg">
+				<h1 class="main-title text-center wow fadeIn">Cualidades</h1>
+				<div class="col-lg-3 col-sm-3 col-xs-6 wow fadeInUp">
+					<div class="piechart">
+						<div class="chart" data-percent="100">
+						<span>C</span>
+						</div>
+						<span class="skill1">CALIDAD</span>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0.2s">
+					<div class="piechart">
+						<div class="chart" data-percent="100">
+						<span>L</span>
+						</div>
+						<span class="skill2">LIMPIEZA</span>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0.4s">
+					<div class="piechart">
+						<div class="chart" data-percent="100">
+						<span>H</span>
+						</div>
+						<span class="skill3">HONESTIDAD</span>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0.6s">
+					<div class="piechart">
+						<div class="chart" data-percent="100">
+						<span>P</span>
+						</div>
+						<span class="skill4">PUNTUALIDAD</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Skills end -->
+	<!-- Experience start -->
+	<section id="experience">
+		<div class="container">
+			<div class="row margin-lg">
+				<h1 class="main-title text-center wow fadeIn">Trabajos</h1>
+					<div class="col-lg-12">
+						<div id="experience-carousel" class="owl-carousel">
+							<div class="card-experience">
+								<div class="card-container wow fadeInUp" data-wow-delay="0.2s">
+									<div class="card-image">
+										<h4>Cuidamos los detalles</h4>
+										<img src="img/experience/ampli.jpg" class="img-responsive" alt="experience">
+									</div>
+									<div class="card-content">
+										<a class="expander" href="#card-1">
+											<i class="fa fa-chevron-up"></i>
+											<span>Construcción</span>
+										</a>
+										<p>Materiales de alta calidad</p>
+									</div>
+									<div class="card-expand" id="card-1">
+										<div class="expand-title">
+										<i class="fa fa-close"></i>
+										<span>Construcción</span>
+										<p>Proyecto</p>
+										</div>
+										<div class="expand-content">
+											<p>
+											  Diseñamos el proyecto completo, además, te entregamos los planos de la construcción. <br>Los diseños son a tu gusto, y todos nuestros procesos constructivos se basan en estándares federales.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-experience">
+								<div class="card-container wow fadeInUp" data-wow-delay="0.4s">
+									<div class="card-image">
+										<h4>Todos los colores</h4>
+										<img src="img/experience/Pintura.jpg" class="img-responsive" alt="experience">
+									</div>
+									<div class="card-content">
+										<a class="expander" href="#card-2">
+											<i class="fa fa-chevron-up"></i>
+											<span>Pintura</span>
+										</a>
+										<p>Bonitos y duraderos</p>
+									</div>
+									<div class="card-expand" id="card-2">
+										<div class="expand-title">
+										<i class="fa fa-close"></i>
+										<span>Pintura</span>
+										<p>Elige los colores</p>
+										</div>
+										<div class="expand-content">
+											<p>
+											Elige la marca y colores que gustes, garantizamos nuestros trabajos y te ofrecemos combinaciones de colores según tus espacios y ambientes.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-experience">
+								<div class="card-container wow fadeInUp" data-wow-delay="0.6s">
+									<div class="card-image">
+										<h4>Protege tu casa</h4>
+										<img src="img/experience/imper.jpg" class="img-responsive" alt="experience">
+									</div>
+									<div class="card-content">
+										<a class="expander" href="#card-3">
+											<i class="fa fa-chevron-up"></i>
+											<span>Impermeabilización</span>
+										</a>
+										<p>Instalación garantizada</p>
+									</div>
+									<div class="card-expand" id="card-3">
+										<div class="expand-title">
+										<i class="fa fa-close"></i>
+										<span>Impermeabilización</span>
+										<p>Elige la marca.</p>
+										</div>
+										<div class="expand-content">
+											<p>
+											Dile adiós a goteras, humedad, cuarteaduras en yesos o plafones. Protege tu salud al evitar hongos por humedades mediante una impermeabilización.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-experience">
+								<div class="card-container">
+									<div class="card-image">
+										<h4>Cuida el detalle</h4>
+										<img src="img/experience/tabla.jpg" class="img-responsive" alt="experience">
+
+									</div>
+									<div class="card-content">
+										<a class="expander" href="#card-4">
+											<i class="fa fa-chevron-up"></i>
+											<span>Tablaroca</span>
+										</a>
+										<p>Para interior y exterior</p>
+									</div>
+									<div class="card-expand" id="card-4">
+										<div class="expand-title">
+										<i class="fa fa-close"></i>
+										<span>Tablaroca</span>
+										<p>Trabajo de calidad</p>
+										</div>
+										<div class="expand-content">
+											<p>
+											  Un sistema de construcción para plafones y muros interiores y exteriores, a base de paneles de yeso. Con características especiales, dependiendo del sin número de usos con que puedes aprovecharlos.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="card-experience">
+								<div class="card-container wow fadeInUp" data-wow-delay="0.2s">
+									<div class="card-image">
+										<h4>Diseño</h4>
+										<img src="img/experience/diseno.jpg" class="img-responsive" alt="experience">
+									</div>
+									<div class="card-content">
+										<a class="expander" href="#card-5">
+											<i class="fa fa-chevron-up"></i>
+											<span>Diseño del proyecto</span>
+										</a>
+										<p>Materializamos tus ideas</p>
+									</div>
+									<div class="card-expand" id="card-5">
+										<div class="expand-title">
+										<i class="fa fa-close"></i>
+										<span>Construcción</span>
+										<p>Proyecto</p>
+										</div>
+										<div class="expand-content">
+											<p>
+                        Diseñamos el proyecto completo. Si ya tienes una idea o si aún no has pensado en nada, nosotros te ayudamos.
+Nuestro equipo elabora el diseño con base en tus gustos, o bien, puede ofrecerte propuestas.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="card-experience">
+								<div class="card-container wow fadeInUp" data-wow-delay="0.2s">
+									<div class="card-image">
+										<h4>Trabajos express</h4>
+										<img src="img/experience/prepara.jpg" class="img-responsive" alt="experience">
+									</div>
+									<div class="card-content">
+										<a class="expander" href="#card-6">
+											<i class="fa fa-chevron-up"></i>
+											<span>Preparación para venta</span>
+										</a>
+										<p>Preparamos tu casa para venta</p>
+									</div>
+									<div class="card-expand" id="card-6">
+										<div class="expand-title">
+										<i class="fa fa-close"></i>
+										<span>Trabajo express</span>
+										<p>Preparación</p>
+										</div>
+										<div class="expand-content">
+											<p>
+												Si vas a vender tu casa o bien vas a rentarla, tenemos una opción rápida y económica para ti. Pregunta por nuestro servicio express.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="card-experience">
+								<div class="card-container wow fadeInUp" data-wow-delay="0.2s">
+									<div class="card-image">
+										<h4>Profesionales</h4>
+										<img src="img/experience/gob.jpg" class="img-responsive" alt="experience">
+									</div>
+									<div class="card-content">
+										<a class="expander" href="#card-7">
+											<i class="fa fa-chevron-up"></i>
+											<span>Gubernamental</span>
+										</a>
+										<p>Trabajamos para gobierno</p>
+									</div>
+									<div class="card-expand" id="card-7">
+										<div class="expand-title">
+										<i class="fa fa-close"></i>
+										<span>Gobierno</span>
+										<p>Proyectos</p>
+										</div>
+										<div class="expand-content">
+											<p>
+												Tenemos experiencia participando en proyectos gubernamentales. Seguimos estándares federales en construcción y servicios de remodelación.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+			</div>
+		</div>
+	</section>
+	<!-- Experience end -->
+	<!-- Awards start -->
+	<section id="awards" data-speed="10" data-type="background">
+		<div class="container">
+			<div class="row margin-lg">
+				<h1 class="main-title text-center wow fadeIn">Proveedores</h1>
+				<div class="col-lg-3 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0.2s">
+					<!-- Award item start -->
+					<div class="award-container">
+						<div class="award">
+							<img src="img/Proveedores/sika.png" alt="logo" class="award" width="50px" >
+						</div>
+						<h3>Sika</h3><br>
+		<!--				<div class="award-meta">
+							<i class="fa fa-calendar"></i>
+							<span class="award-date"> January 01 2015</span>
+						</div>  -->
+					<!--	<span class="award-desc">Received the award on account of being awesome, and notable excellence in daily activities</span> -->
+					</div>
+					<!-- Award item end -->
+				</div>
+				<div class="col-lg-3 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0.4s">
+					<div class="award-container">
+						<div class="award">
+							<img src="img/Proveedores/impac.png" alt="logo" class="award" width="50px" >
+						</div>
+						<h3>Impac</h3> <br>
+						<!--				<div class="award-meta">
+											<i class="fa fa-calendar"></i>
+											<span class="award-date"> January 01 2015</span>
+										</div>  -->
+				<!--		<span class="award-desc">Received the award on account of being awesome, and notable excellence in daily activities</span> -->
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0.6s">
+					<div class="award-container">
+						<div class="award">
+							<img src="img/Proveedores/ushe.png" alt="logo" width="120px" class="award" >
+						</div>
+						<h3>Ushe</h3><br>
+						<!--				<div class="award-meta">
+											<i class="fa fa-calendar"></i>
+											<span class="award-date"> January 01 2015</span>
+										</div>  -->
+										<!--		<span class="award-desc">Received the award on account of being awesome, and notable excellence in daily activities</span> -->
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0.8s">
+					<div class="award-container">
+						<div class="award">
+							<img src="img/Proveedores/berel.png" alt="logo" class="award" width="50px">
+						</div>
+						<h3>Berel</h3><br><br>
+						<!--				<div class="award-meta">
+											<i class="fa fa-calendar"></i>
+											<span class="award-date"> January 01 2015</span>
+										</div>  -->
+										<!--		<span class="award-desc">Received the award on account of being awesome, and notable excellence in daily activities</span> -->
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0.8s">
+					<div class="award-container">
+						<div class="award">
+							<img src="img/Proveedores/panelw.jpg" alt="logo" class="award" width="50px" >
+						</div>
+						<h3>Panel W</h3><br>
+						<!--				<div class="award-meta">
+											<i class="fa fa-calendar"></i>
+											<span class="award-date"> January 01 2015</span>
+										</div>  -->
+										<!--		<span class="award-desc">Received the award on account of being awesome, and notable excellence in daily activities</span> -->
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0.8s">
+					<div class="award-container">
+						<div class="award">
+							<img src="img/Proveedores/comex.png" alt="logo" class="award" width="100px">
+						</div>
+						<h3>Comex</h3>
+						<!--				<div class="award-meta">
+											<i class="fa fa-calendar"></i>
+											<span class="award-date"> January 01 2015</span>
+										</div>  -->
+										<!--		<span class="award-desc">Received the award on account of being awesome, and notable excellence in daily activities</span> -->
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0.8s">
+					<div class="award-container">
+						<div class="award">
+							<img src="img/Proveedores/biticino.png" alt="logo" class="award" width="100px">
+						</div>
+						<h3>biticino</h3>
+						<!--				<div class="award-meta">
+											<i class="fa fa-calendar"></i>
+											<span class="award-date"> January 01 2015</span>
+										</div>  -->
+										<!--		<span class="award-desc">Received the award on account of being awesome, and notable excellence in daily activities</span> -->
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0.8s">
+					<div class="award-container">
+						<div class="award">
+							<img src="img/Proveedores/Truper.jpg" alt="logo" class="award" width="100px" >
+						</div>
+						<h3>Truper</h3>
+						<!--				<div class="award-meta">
+											<i class="fa fa-calendar"></i>
+											<span class="award-date"> January 01 2015</span>
+										</div>  -->
+										<!--		<span class="award-desc">Received the award on account of being awesome, and notable excellence in daily activities</span> -->
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- Awards end -->
+	<!-- Education start -->
+	<section id="education">
+		<div class="container">
+			<div class="row margin-lg">
+				<h1 class="main-title text-center wow fadeIn">VALORES</h1>
+				<div class="col-lg-12">
+					<!--Timeline start-->
+					<div class="timeline-container clearfix wow fadeIn">
+						<div class="latest">
+							<span>ACRONOS</span>
+						</div>
+						<!--Right Group start-->
+						<div class="group-item group-right clearfix wow fadeInLeft" data-wow-delay="0.2s">
+							<span class="group-date">1 </span>
+							<span class="group-middle"></span>
+							<div class="group-desc">
+								<h3 class="group-title">Misión</h3>
+								<span class="group-sub-title">-----------------------</span>
+								<p>Ofrecer servicios de renovación de espacios para mejorar la calidad de vida de nuestros clientes, que nuestro trato en cada transformación realizada genere confianza y comodidad.</p>
+							</div>
+						</div>
+						<!--Right Group end-->
+						<!--Left Group start-->
+						<div class="group-item group-left clearfix wow fadeInRight" data-wow-delay="0.4s">
+							<span class="group-date">2 </span>
+							<span class="group-middle"></span>
+							<div class="group-desc">
+								<h3 class="group-title">Visión</h3>
+								<span class="group-sub-title">------------------------</span>
+								<p>Posicionarnos como la primera opción de los consumidores para renovación de espacios, ofreciendo servicios puntuales, que excedan las expectativas del cliente.</p>
+							</div>
+						</div>
+						<!--Left Group end-->
+						<div class="group-item group-right clearfix wow fadeInLeft" data-wow-delay="0.6s">
+							<span class="group-date"> 3</span>
+							<span class="group-middle"></span>
+							<div class="group-desc">
+								<h3 class="group-title">Objetivo</h3>
+								<span class="group-sub-title">-----------------------</span>
+								<p>Ser una empresa con operaciones eficientes, que genere valor para sus consumidores, empleados, proveedores y socios.</p>
+							</div>
+						</div>
+					</div>
+					<div class="oldest wow fadeIn">
+							<span>ACRONOS</span>
+						</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Education end -->
+	<!-- References start -->
+	<section id="references" data-speed="10" data-type="background">
+		<div class="container">
+			<div class="row margin-lg">
+				<h1 class="main-title text-center wow fadeIn">Testimonios</h1>
+				<div class="col-lg-12">
+					<div class="ref-container">
+						<div class="row">
+							<div id="references-carousel" class="owl-carousel">
+								<div class="reference wow fadeInLeft">
+									<div class="row">
+										<div class="col-lg-3 text-right">
+											<div class="ref-person">
+												<h3>Fernando Viramontes</h3>
+												<p>CEO de MORVI Solar</p>
+											</div>
+										</div>
+										<div class="col-lg-9">
+											<p class="ref-text">
+											"Gente capacitada y profesional, excelente servicio y trabajos de primera calidad."
+											</p>
+										</div>
+									</div>
+								</div>
+								<!--inicio referencia   -->
+								<div class="reference">
+									<div class="row">
+										<div class="col-lg-3 text-right">
+											<div class="ref-person">
+												<h3>Héctor Gutiérrez Reynoso</h3>
+												<p>Comerciante carnicero</p>
+											</div>
+										</div>
+										<div class="col-lg-9">
+											<p class="ref-text">
+											"Excelente atención, se adaptan muy bien a tu presupuesto y satisfacción total!"
+											</p>
+										</div>
+									</div>
+								</div>
+								<!--inicio referencia   -->
+								<div class="reference">
+									<div class="row">
+										<div class="col-lg-3 text-right">
+											<div class="ref-person">
+												<h3>José Torres Villalobos</h3>
+												<p>Comerciante</p>
+											</div>
+										</div>
+										<div class="col-lg-9">
+											<p class="ref-text">
+											"A mí me hicieron un trabajo de pintura en una oficina en el centro comercial agropecuario y me gustó mucho su limpieza, profesionalismo y en el tiempo prometido."
+											</p>
+										</div>
+									</div>
+								</div>
+								<!--fin referencia -->
+								<!--inicio referencia   -->
+								<div class="reference">
+									<div class="row">
+										<div class="col-lg-3 text-right">
+											<div class="ref-person">
+												<h3>Ma. De Los Ángeles Moreno</h3>
+												<p>Maestra</p>
+											</div>
+										</div>
+										<div class="col-lg-9">
+											<p class="ref-text">
+											"Excelente empresa. Un equipo muy profesional. Mi casa se hizo más fresca con la impermeabilización. Desapareció la humedad del ambiente y el bochorno que se respiraba. Los recomiendo ampliamente. Gracias Acronos."
+											</p>
+										</div>
+									</div>
+								</div>
+								<!--fin referencia -->
+								<!--inicio referencia   -->
+								<div class="reference">
+									<div class="row">
+										<div class="col-lg-3 text-right">
+											<div class="ref-person">
+												<h3>Médico Leonel Galeana</h3>
+												<p>Laboratorios Climed</p>
+											</div>
+										</div>
+										<div class="col-lg-9">
+											<p class="ref-text">
+												"Cuando cuidamos nuestro hogar también estamos cuidando nuestra salud, Acronos Renovation and Painting ofrece rapidez y sobre todo confianza a precios accesibles."
+											</p>
+										</div>
+									</div>
+								</div>
+								<!--fin referencia -->
+								<!--inicio referencia   -->
+								<div class="reference">
+									<div class="row">
+										<div class="col-lg-3 text-right">
+											<div class="ref-person">
+												<h3>José Daniel Noriega</h3>
+												<p>Profesor</p>
+											</div>
+										</div>
+										<div class="col-lg-9">
+											<p class="ref-text">
+											"Acronos Renovation and Painting es una empresa altamente recomendable, ofrece servicios de calidad."
+											</p>
+										</div>
+									</div>
+								</div>
+								<!--fin referencia -->
+								<!--inicio referencia   -->
+								<div class="reference">
+									<div class="row">
+										<div class="col-lg-3 text-right">
+											<div class="ref-person">
+												<h3>Jorge Luis Jiménez</h3>
+												<p>Ingeniero Civil</p>
+											</div>
+										</div>
+										<div class="col-lg-9">
+											<p class="ref-text">
+											"Estamos Muy satisfechos con el servicio otorgado por Acronos Renovation and Painting, por su profesionalidad, seriedad y disponibilidad han sido la Clave para resolver nuestro problema en tiempos breves. Recomendable al 100%."
+											</p>
+										</div>
+									</div>
+								</div>
+								<!--fin referencia -->
+								<!--inicio referencia   -->
+								<div class="reference">
+									<div class="row">
+										<div class="col-lg-3 text-right">
+											<div class="ref-person">
+												<h3>Leticia González</h3>
+												<p>Activista social</p>
+											</div>
+										</div>
+										<div class="col-lg-9">
+											<p class="ref-text">
+											"Las principales cualidades de Acronos Renovation and Painting es su gran disponibilidad para trabajar, la calidad que otorgan en cada servicio y  la ética profesional bajo la que se rigen."
+											</p>
+										</div>
+									</div>
+								</div>
+								<!--fin referencia -->
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- References end -->
+	<!-- Work start -->
+	<section id="work">
+		<div class="container">
+			<div class="row margin-lg">
+				<h1 class="main-title text-center wow fadeIn">Portafolio</h1>
+				<div class="col-lg-12">
+					<!-- Work Controls -->
+					<div id="filters" class="controls work-controls wow fadeIn">
+						<button class="is-checked btn btn-work" data-filter="*">Todo</button>
+						<button class="btn btn-work" data-filter=".webdesign">Impermeabilización</button>
+						<button class="btn btn-work" data-filter=".webdevelopment">Pintura</button>
+						<button class="btn btn-work" data-filter=".branddesign">Construcción</button>
+						<button class="btn btn-work" data-filter=".detalle">Detallado</button>
+
+					</div>
+					<!--Work Items-->
+					<div class="work-items isotope wow fadeInUp">
+						<div class="item webdesign work-item col-xs-6 col-sm-6 col-md-3 col-lg-3">
+							<a href="#" class="view-work-item" data-toggle="modal" data-id="prueba" data-target="#lightbox">
+								<img src="img/portfolio/1.jpg" class="img-responsive" alt="work-item">
+								<div class="overlay">
+									<div class="work-category">
+										<h5>Impermeabilización</h5>
+									</div>
+
+								</div>
+							</a>
+						</div>
+						<div class="item webdevelopment work-item col-xs-6 col-sm-6 col-md-3 col-lg-3">
+							<a href="#" class="view-work-item" data-id="Work Item 2" data-toggle="modal" data-target="#lightbox">
+								<img src="img/portfolio/2.jpg" class="img-responsive" alt="work-item">
+								<div class="overlay">
+									<div class="work-category">
+										<h5>Pintura</h5>
+									</div>
+
+								</div>
+							</a>
+						</div>
+						<div class="item webdevelopment work-item col-xs-6 col-sm-6 col-md-3 col-lg-3">
+							<a href="#" class="view-work-item" data-id="Work Item 3" data-toggle="modal" data-target="#lightbox">
+								<img src="img/portfolio/3.jpg" class="img-responsive" alt="work-item">
+								<div class="overlay">
+									<div class="work-category">
+										<h5>Pintura</h5>
+									</div>
+
+								</div>
+							</a>
+						</div>
+						<div class="item webdevelopment work-item col-xs-6 col-sm-6 col-md-3 col-lg-3">
+							<a href="#" class="view-work-item" data-id="Work Item 4" data-toggle="modal" data-target="#lightbox">
+								<img src="img/portfolio/4.jpg" class="img-responsive" alt="work-item">
+								<div class="overlay">
+									<div class="work-category">
+										<h5>Pintura</h5>
+									</div>
+
+								</div>
+							</a>
+						</div>
+
+						<div class="item webdesign work-item col-xs-6 col-sm-6 col-md-3 col-lg-3">
+							<a href="#" class="view-work-item" data-toggle="modal" data-id="Work Item 1" data-target="#lightbox">
+								<img src="img/portfolio/5.jpg" class="img-responsive" alt="work-item">
+								<div class="overlay">
+									<div class="work-category">
+										<h5>Impermeabilización</h5>
+									</div>
+
+								</div>
+							</a>
+						</div>
+						<div class="item webdevelopment work-item col-xs-6 col-sm-6 col-md-3 col-lg-3">
+							<a href="#" class="view-work-item" data-id="Work Item 2" data-toggle="modal" data-target="#lightbox">
+								<img src="img/portfolio/6.jpg" class="img-responsive" alt="work-item">
+								<div class="overlay">
+									<div class="work-category">
+										<h5>Pintura</h5>
+									</div>
+
+								</div>
+							</a>
+						</div>
+						<div class="item webdevelopment work-item col-xs-6 col-sm-6 col-md-3 col-lg-3">
+							<a href="#" class="view-work-item" data-id="Work Item 3" data-toggle="modal" data-target="#lightbox">
+								<img src="img/portfolio/7.jpg" class="img-responsive" alt="work-item">
+								<div class="overlay">
+									<div class="work-category">
+										<h5>Pintura</h5>
+									</div>
+
+								</div>
+							</a>
+						</div>
+						<div class="item detalle work-item col-xs-6 col-sm-6 col-md-3 col-lg-3">
+							<a href="#" class="view-work-item" data-id="Work Item 4" data-toggle="modal" data-target="#lightbox">
+								<img src="img/portfolio/8.jpg" class="img-responsive" alt="work-item">
+								<div class="overlay">
+									<div class="work-category">
+										<h5>Detallado</h5>
+									</div>
+									<!--<div class="work-name">
+										<h3>Camera</h3>
+									</div> -->
+								</div>
+							</a>
+						</div>
+
+						<div class="item detalle work-item col-xs-6 col-sm-6 col-md-3 col-lg-3">
+							<a href="#" class="view-work-item" data-id="Work Item 3" data-toggle="modal" data-target="#lightbox">
+								<img src="img/portfolio/9.jpg" class="img-responsive" alt="work-item">
+								<div class="overlay">
+									<div class="work-category">
+										<h5>Detallado</h5>
+									</div>
+
+								</div>
+							</a>
+						</div>
+
+						<div class="item detalle work-item col-xs-6 col-sm-6 col-md-3 col-lg-3">
+							<a href="#" class="view-work-item" data-id="Work Item 3" data-toggle="modal" data-target="#lightbox">
+								<img src="img/portfolio/10.jpg" class="img-responsive" alt="work-item">
+								<div class="overlay">
+									<div class="work-category">
+										<h5>Detallado</h5>
+									</div>
+								</div>
+							</a>
+						</div>
+
+						<div class="item detalle work-item col-xs-6 col-sm-6 col-md-3 col-lg-3">
+							<a href="#" class="view-work-item" data-id="Work Item 3" data-toggle="modal" data-target="#lightbox">
+								<img src="img/portfolio/11.jpg" class="img-responsive" alt="work-item">
+								<div class="overlay">
+									<div class="work-category">
+										<h5>Detallado</h5>
+									</div>
+								</div>
+							</a>
+						</div>
+
+						<div class="item webdesign work-item col-xs-6 col-sm-6 col-md-3 col-lg-3">
+							<a href="#" class="view-work-item" data-id="Work Item 3" data-toggle="modal" data-target="#lightbox">
+								<img src="img/portfolio/12.jpg" class="img-responsive" alt="work-item">
+								<div class="overlay">
+									<div class="work-category">
+										<h5>Impermeabilización</h5>
+									</div>
+								</div>
+							</a>
+						</div>
+
+						<div class="item branddesign work-item col-xs-6 col-sm-6 col-md-3 col-lg-3">
+							<a href="#" class="view-work-item" data-id="Work Item 3" data-toggle="modal" data-target="#lightbox">
+								<img src="img/portfolio/13.jpg" class="img-responsive" alt="work-item">
+								<div class="overlay">
+									<div class="work-category">
+										<h5>Construcción</h5>
+									</div>
+								</div>
+							</a>
+						</div>
+
+						<div class="item webdesign work-item col-xs-6 col-sm-6 col-md-3 col-lg-3">
+							<a href="#" class="view-work-item" data-id="Work Item 3" data-toggle="modal" data-target="#lightbox">
+								<img src="img/portfolio/14.jpg" class="img-responsive" alt="work-item">
+								<div class="overlay">
+									<div class="work-category">
+										<h5>Impermeabilización</h5>
+									</div>
+								</div>
+							</a>
+						</div>
+
+						<div class="item webdesign work-item col-xs-6 col-sm-6 col-md-3 col-lg-3">
+							<a href="#" class="view-work-item" data-id="Work Item 3" data-toggle="modal" data-target="#lightbox">
+								<img src="img/portfolio/15.jpg" class="img-responsive" alt="work-item">
+								<div class="overlay">
+									<div class="work-category">
+										<h5>Impermeabilización</h5>
+									</div>
+								</div>
+							</a>
+						</div>
+
+						<div class="item webdevelopment work-item col-xs-6 col-sm-6 col-md-3 col-lg-3">
+							<a href="#" class="view-work-item" data-id="Work Item 3" data-toggle="modal" data-target="#lightbox">
+								<img src="img/portfolio/16.jpg" class="img-responsive" alt="work-item">
+								<div class="overlay">
+									<div class="work-category">
+										<h5>Pintura</h5>
+									</div>
+
+								</div>
+							</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Work end -->
+	<!-- Contact start -->
+	<section id="contact">
+		<div class="container">
+			<div class="row margin-lg">
+				<h1 class="main-title text-center wow fadeIn">Contacto</h1>
+
+					</div>
+				</div>
+				<!--Social start-->
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay="0.2s">
+						<div class="social-box-container text-center">
+							<a action="_blank" href="mailto:ventas@acronos.com.mx">
+								<div class="icon-box">
+									<i class="fa fa-envelope"></i>
+								</div>
+								<div class="social-text">
+									ventas@acronos.com.mx
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay="0.4s">
+						<div class="social-box-container text-center">
+							<a href="tel:+524493182541">
+								<div class="icon-box">
+									<i class="fa fa-phone"></i>
+								</div>
+								<div class="social-text">
+									Haz tu cita <br>
+									318 2541
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
+						<div class="social-box-container text-center">
+							<a target="_blank" href="https://goo.gl/maps/J1t4chs5mix">
+								<div class="icon-box">
+									<i class="fa fa-map-marker"></i>
+								</div>
+								<div class="social-text">
+									De La Lava 212, Villas de la Cantera,<br> 20200 Aguascalientes, Ags., México
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--Social end-->
+				<!--Footer start-->
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="copyright text-center">
+							 2018, ACRONOS Renovation and Painting. All Rights Reserved. <br>
+							 Todas las marcas mencionadas son Marcas registradas y su uso es meramente informativo.
+						</div>
+					</div>
+				</div>
+				<!--Footer end-->
+		</div>
+	</div>
+	</section>
+	<!-- Contact end -->
+</div>
+<!-- Resume end -->
+<!-- Lightbox start -->
+<div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body">
+				<img src="#" alt="work-item"/>
+			</div>
+			<div class="modal-caption">
+				<div id="caption"></div>
+				<button type="button" class="close hidden" data-dismiss="modal" aria-hidden="true"><i class="fa fa-close"></i></button>
+			</div>
+        </div>
+    </div>
+</div>
+<!-- Lightbox end -->
+<!-- Footer start -->
+<footer>
+</footer>
+<!-- Footer end -->
+<!-- Back To Top Button start -->
+<a href="#" class="scrollToTop"><i class="fa fa-chevron-up"></i></a>
+<!-- Back To Top Button end -->
+
+<!-- jQuery -->
+<script src="js/ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Compiled JS/Scripts -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/discover-isotope.js"></script>
+<script src="js/discovery.js"></script>
+<script src="js/jquery.easypiechart.js"></script>
+<script src="js/skills.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/owl-custom.js"></script>
+<script src="js/parallax/parallax.js"></script>
+<script src="js/modernizr.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.validation.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/nav.js"></script>
+
+
+<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.
+	<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-12345678-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+	</script>
+ -->
+</body>
+
+
+</html>
